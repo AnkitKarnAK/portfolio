@@ -10,6 +10,7 @@ import { useRouter } from "next/router";
 // framer motion
 import { AnimatePresence, motion } from "framer-motion";
 import Head from "next/head";
+import { Analytics } from "@vercel/analytics/react";
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
@@ -43,6 +44,7 @@ function MyApp({ Component, pageProps }) {
           </motion.div>
         {/*</AnimatePresence>*/}
       </Layout>
+        <Analytics />
     </>
   );
 }
