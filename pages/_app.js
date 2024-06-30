@@ -26,6 +26,7 @@ function MyApp({ Component, pageProps }) {
       page_title: document.title,
       page_location: window.location.href,
       page_path: window.location.pathname,
+      page_name: "Home",
       referer: document.referrer,
       utm_source: pathname.search("utm_source")
         ? pathname.search("utm_source")
